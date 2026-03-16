@@ -1,0 +1,19 @@
+# Environment
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+
+# Test files
+test_gemini.py
+test_agent.py
+generate_sample.py
+sample_data.csv
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/
