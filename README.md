@@ -46,38 +46,24 @@ Get your free API key at: https://aistudio.google.com
 streamlit run app.py
 
 ## Project Structure
-
+```
 Smart-Data-Insight/
-
-app.py — Main Streamlit application
-
-requirements.txt — Project dependencies
-
-.env — API key (never commit this to git)
-
-README.md — Project documentation
-
-.gitignore — Git ignore rules
-
-modules/
-
-    data_profiler.py — Auto dataset profiling
-
-    anomaly_detector.py — ML anomaly detection (IsolationForest, Z-Score, IQR)
-
-    chart_engine.py — Auto chart generation (histograms, heatmaps, scatter plots)
-
-    gemini_agent.py — Gemini AI agent (reasoning, code generation, narration)
-
-    code_executor.py — Safe Python code executor (sandboxed exec)
-
-    __init__.py — Module initializer
-
-utils/
-
-    session_memory.py — Streamlit session state manager
-
-    __init__.py — Module initializer
+├── app.py                      # Main Streamlit application
+├── requirements.txt            # Project dependencies
+├── .env                        # API key (never commit to git)
+├── README.md                   # Project documentation
+├── .gitignore                  # Git ignore rules
+├── modules/
+│   ├── __init__.py             # Module initializer
+│   ├── data_profiler.py        # Auto dataset profiling
+│   ├── anomaly_detector.py     # ML anomaly detection
+│   ├── chart_engine.py         # Auto chart generation
+│   ├── gemini_agent.py         # Gemini AI agent
+│   └── code_executor.py        # Safe Python code executor
+└── utils/
+    ├── __init__.py             # Module initializer
+    └── session_memory.py       # Streamlit session state manager
+```
 
 ## Usage
 
